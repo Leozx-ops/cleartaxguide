@@ -287,7 +287,7 @@
     <div class="calculator">
       <div class="calc-title">
         <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
-        Self-employed tax estimator (US 2024)
+        Self-employed tax estimator (Tax Year 2025)
       </div>
 
       <div class="calc-row">
@@ -420,14 +420,14 @@
       const seTax = net * 0.9235 * 0.153;
       document.getElementById('se-tax').textContent = fmt(seTax);
 
-      const deductions = { single: 14600, married: 29200, hoh: 21900 };
+      const deductions = { single: 15750, married: 31500, hoh: 23625 };
       const seDeduction = seTax / 2;
       const taxable = Math.max(0, net - seDeduction - deductions[status]);
 
       let fedTax = 0;
       const brackets = status === 'married'
-        ? [[23200,0.10],[94300,0.12],[201050,0.22],[383900,0.24],[487450,0.32],[731200,0.35],[Infinity,0.37]]
-        : [[11600,0.10],[47150,0.12],[100525,0.22],[191950,0.24],[243725,0.32],[609350,0.35],[Infinity,0.37]];
+        ? [[23850,0.10],[96950,0.12],[206700,0.22],[394600,0.24],[501050,0.32],[751600,0.35],[Infinity,0.37]]
+        : [[11925,0.10],[48475,0.12],[103350,0.22],[197300,0.24],[250525,0.32],[626350,0.35],[Infinity,0.37]];
 
       let prev = 0;
       for (const [limit, rate] of brackets) {
