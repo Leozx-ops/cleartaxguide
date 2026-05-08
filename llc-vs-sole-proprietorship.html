@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLC vs Sole Proprietorship: Which Is Better for Taxes in 2025? | ClearTaxGuide</title>
+  <meta name="description" content="Compare LLC vs sole proprietorship taxes for 2025. Learn about self-employment tax, liability protection, S corp elections, and which structure saves you more money." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --green: #1D9E75; --green-dark: #0F6E56; --green-light: #E1F5EE;
+      --orange: #D85A30; --text: #1a1a1a; --text-muted: #6b6b6b;
+      --text-faint: #9a9a9a; --bg: #ffffff; --bg-secondary: #f7f7f5;
+      --border: rgba(0,0,0,0.10);
+    }
+    body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--bg); line-height: 1.7; }
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 2rem; border-bottom: 1px solid var(--border);
+      background: var(--bg); position: sticky; top: 0; z-index: 10;
+    }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 600; }
+    .nav-logo span { color: var(--green); }
+    .nav-links { display: flex; gap: 1.5rem; }
+    .nav-links a { font-size: 14px; color: var(--text-muted); }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+    .nav-cta {
+      background: var(--green); color: white; border: none;
+      padding: 8px 18px; border-radius: 6px; font-size: 13px;
+      font-weight: 500; cursor: pointer; font-family: 'DM Sans', sans-serif;
+    }
+    .article-wrap { max-width: 680px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+    .article-tag {
+      display: inline-block; background: var(--green-light); color: var(--green-dark);
+      font-size: 12px; font-weight: 500; padding: 4px 14px; border-radius: 20px; margin-bottom: 1.25rem;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 600;
+      line-height: 1.2; margin-bottom: 1rem; letter-spacing: -0.3px;
+    }
+    .article-meta {
+      font-size: 13px; color: var(--text-faint); margin-bottom: 2rem;
+      padding-bottom: 2rem; border-bottom: 1px solid var(--border);
+    }
+    .updated-badge {
+      display: inline-block; background: #FFF8E6; color: #92600A;
+      font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 10px; margin-left: 8px;
+    }
+    .toc { background: var(--bg-secondary); border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 2.5rem; }
+    .toc-title { font-size: 13px; font-weight: 500; margin-bottom: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+    .toc ol { padding-left: 1.25rem; }
+    .toc li { font-size: 14px; margin-bottom: 4px; }
+    .toc a { color: var(--green); }
+    .article-body h2 {
+      font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 600;
+      margin: 2.5rem 0 1rem; letter-spacing: -0.2px;
+    }
+    .article-body h3 { font-size: 17px; font-weight: 500; margin: 1.75rem 0 0.75rem; }
+    .article-body p { font-size: 16px; margin-bottom: 1.25rem; color: #2a2a2a; }
+    .article-body ul, .article-body ol { padding-left: 1.5rem; margin-bottom: 1.25rem; }
+    .article-body li { font-size: 16px; margin-bottom: 6px; color: #2a2a2a; }
+    .callout {
+      background: var(--green-light); border-left: 3px solid var(--green);
+      border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin: 1.5rem 0; font-size: 15px;
+    }
+    .callout strong { color: var(--green-dark); }
+    .callout-warning {
+      background: #FFF8E6; border-left: 3px solid #E8A020;
+      border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin: 1.5rem 0; font-size: 15px;
+    }
+    .callout-warning strong { color: #92600A; }
+    .tax-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 15px; }
+    .tax-table th {
+      background: var(--bg-secondary); text-align: left; padding: 10px 14px;
+      font-weight: 500; font-size: 13px; text-transform: uppercase;
+      letter-spacing: 0.5px; color: var(--text-muted); border-bottom: 1px solid var(--border);
+    }
+    .tax-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+    .tax-table tr:last-child td { border-bottom: none; }
+    .tax-table tr:hover td { background: var(--bg-secondary); }
+    .highlight-row td { font-weight: 500; color: var(--green-dark); background: var(--green-light) !important; }
+    .data-source { font-size: 12px; color: var(--text-faint); margin-top: -1rem; margin-bottom: 1.5rem; }
+    .summary-box { background: var(--bg-secondary); border-radius: 10px; padding: 1.5rem; margin: 2rem 0; }
+    .summary-box h3 { margin-top: 0; margin-bottom: 1rem; font-size: 16px; }
+    .verdict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+    .verdict-card { border-radius: 8px; padding: 1.25rem; }
+    .verdict-card.sole { background: #F0F8FF; border: 1px solid #B5D4F4; }
+    .verdict-card.llc { background: var(--green-light); border: 1px solid #9FE1CB; }
+    .verdict-title { font-size: 14px; font-weight: 500; margin-bottom: 8px; }
+    .verdict-card.sole .verdict-title { color: #185FA5; }
+    .verdict-card.llc .verdict-title { color: var(--green-dark); }
+    .verdict-card ul { padding-left: 1.25rem; }
+    .verdict-card li { font-size: 13px; margin-bottom: 4px; color: var(--text-muted); }
+    .next-article {
+      border: 1px solid var(--border); border-radius: 10px;
+      padding: 1.25rem 1.5rem; margin-top: 3rem;
+    }
+    .next-label { font-size: 11px; color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+    .next-title { font-size: 15px; font-weight: 500; color: var(--green); }
+    footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 2rem; }
+    .footer-inner { max-width: 680px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .footer-logo { font-family: 'Playfair Display', serif; font-size: 16px; }
+    .footer-logo span { color: var(--green); }
+    .footer-desc { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+    .footer-bottom { max-width: 680px; margin: 1rem auto 0; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-faint); }
+    @media (max-width: 600px) {
+      h1 { font-size: 26px; }
+      nav { padding: 1rem; }
+      .nav-links { display: none; }
+      .verdict-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/cleartaxguide/" style="text-decoration:none;">
+    <div class="nav-logo">Clear<span>Tax</span>Guide</div>
+  </a>
+  <div class="nav-links">
+    <a href="/cleartaxguide/#tools">Tools</a>
+    <a href="/cleartaxguide/#guides">Guides</a>
+    <a href="/cleartaxguide/">Home</a>
+  </div>
+  <button class="nav-cta">Free Tax Check</button>
+</nav>
+
+<div class="article-wrap">
+
+  <div class="article-tag">Small Business</div>
+  <h1>LLC vs Sole Proprietorship: Which Is Better for Taxes in 2025?</h1>
+  <div class="article-meta">
+    By ClearTaxGuide · Updated May 2025 · 7 min read
+    <span class="updated-badge">✓ 2025 IRS figures</span>
+  </div>
+
+  <div class="toc">
+    <div class="toc-title">In this guide</div>
+    <ol>
+      <li><a href="#key-difference">The key tax difference</a></li>
+      <li><a href="#sole-prop-taxes">How sole proprietorship taxes work</a></li>
+      <li><a href="#llc-taxes">How LLC taxes work</a></li>
+      <li><a href="#scorp">The S corp election: where it gets interesting</a></li>
+      <li><a href="#comparison">Side-by-side comparison</a></li>
+      <li><a href="#which-to-choose">Which should you choose?</a></li>
+      <li><a href="#costs">LLC formation costs by state</a></li>
+    </ol>
+  </div>
+
+  <div class="article-body">
+
+    <p>One of the most common questions from freelancers and small business owners is whether to operate as a sole proprietor or form an LLC. The short answer: for most people just starting out, the tax difference is smaller than you think — but it matters more as your income grows.</p>
+    <p>Here's a clear breakdown of how each structure is taxed in 2025, and when switching to an LLC actually saves you money.</p>
+
+    <h2 id="key-difference">1. The key tax difference</h2>
+    <p>Here's the most important thing to understand upfront:</p>
+
+    <div class="callout">
+      <strong>By default, a single-member LLC is taxed exactly the same as a sole proprietorship.</strong> Both report income on Schedule C and pay the same 15.3% self-employment tax. The difference only appears when you make a special tax election.
+    </div>
+
+    <p>This surprises many people. Forming an LLC does not automatically reduce your taxes. The LLC's main benefit at the start is <strong>liability protection</strong> — your personal assets are shielded from business debts and lawsuits. The tax advantages come later, through an S corp election.</p>
+
+    <h2 id="sole-prop-taxes">2. How sole proprietorship taxes work</h2>
+    <p>As a sole proprietor, your business and personal taxes are combined. There is no separate business tax return.</p>
+    <ul>
+      <li>Report all income and expenses on <strong>Schedule C</strong> (attached to Form 1040)</li>
+      <li>Pay <strong>self-employment tax of 15.3%</strong> on net profit</li>
+      <li>Pay <strong>federal income tax</strong> at your personal bracket rate</li>
+      <li>Deduct half of self-employment tax from gross income</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Example:</strong> Net profit of $80,000. Self-employment tax = $80,000 × 0.9235 × 15.3% = $11,302. You deduct $5,651 (half) before calculating income tax. Simple, but expensive at higher income levels.
+    </div>
+
+    <h2 id="llc-taxes">3. How LLC taxes work</h2>
+    <p>A single-member LLC is what the IRS calls a <strong>"disregarded entity"</strong> — meaning for tax purposes, it does not exist separately from you. The default treatment is identical to a sole proprietorship.</p>
+
+    <table class="tax-table">
+      <thead>
+        <tr><th>Structure</th><th>Default tax treatment</th><th>SE tax on profits</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Sole proprietorship</td><td>Schedule C, Form 1040</td><td>15.3% on all net profit</td></tr>
+        <tr class="highlight-row"><td>Single-member LLC (default)</td><td>Schedule C, Form 1040</td><td>15.3% on all net profit</td></tr>
+        <tr><td>Multi-member LLC (default)</td><td>Form 1065, Schedule K-1</td><td>15.3% on each member's share</td></tr>
+        <tr><td>LLC with S corp election</td><td>Form 1120-S, W-2 salary</td><td>Only on salary portion</td></tr>
+      </tbody>
+    </table>
+    <p class="data-source">Source: IRS Publication 3402; IRS Single Member LLC guidance</p>
+
+    <h2 id="scorp">4. The S corp election: where it gets interesting</h2>
+    <p>An LLC can elect to be taxed as an <strong>S corporation</strong> by filing Form 2553 with the IRS. This is where real tax savings can happen — but only once your profit is high enough to justify the added complexity.</p>
+
+    <h3>How the S corp election reduces taxes</h3>
+    <p>With an S corp election, you split your income into two parts:</p>
+    <ul>
+      <li><strong>Reasonable salary</strong> — subject to payroll taxes (15.3% split between you and the "company")</li>
+      <li><strong>Distributions</strong> — the remaining profit, which is <em>not</em> subject to self-employment tax</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Example of S corp savings:</strong> Net profit $150,000. As a sole proprietor, you pay SE tax on the full amount = ~$21,195. With S corp election, you pay yourself a $80,000 salary (SE tax = ~$11,304) and take $70,000 as a distribution (no SE tax). You save approximately $9,891 per year — minus the added cost of payroll administration (~$1,500-3,000/year).
+    </div>
+
+    <div class="callout-warning">
+      <strong>Important:</strong> The IRS requires you to pay yourself a "reasonable salary" — you cannot pay yourself $1 to avoid all payroll taxes. The IRS actively scrutinises this. Most tax professionals recommend the S corp election only when net profit exceeds $60,000-$80,000 per year.
+    </div>
+
+    <h3>2025 S corp key numbers</h3>
+    <table class="tax-table">
+      <thead>
+        <tr><th>Item</th><th>2025 figure</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Social Security wage base</td><td>$176,100</td></tr>
+        <tr><td>Additional Medicare surtax threshold (single)</td><td>$200,000</td></tr>
+        <tr><td>Additional Medicare surtax rate</td><td>0.9%</td></tr>
+        <tr><td>Form 2553 filing deadline (new LLC)</td><td>Within 2 months + 15 days of tax year start</td></tr>
+      </tbody>
+    </table>
+    <p class="data-source">Source: IRS Rev. Proc. 2024-40; Social Security Administration 2025</p>
+
+    <h2 id="comparison">5. Side-by-side comparison</h2>
+
+    <table class="tax-table">
+      <thead>
+        <tr><th>Factor</th><th>Sole proprietorship</th><th>Single-member LLC</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Setup cost</td><td>$0</td><td>$35–$800+ (state filing fee)</td></tr>
+        <tr><td>Annual maintenance</td><td>None</td><td>$0–$500+ (state dependent)</td></tr>
+        <tr><td>Tax forms</td><td>Schedule C + 1040</td><td>Same (by default)</td></tr>
+        <tr><td>Self-employment tax</td><td>15.3% on all profit</td><td>15.3% on all profit (default)</td></tr>
+        <tr><td>Personal liability protection</td><td>None</td><td>Yes (if maintained properly)</td></tr>
+        <tr><td>S corp election available</td><td>No</td><td>Yes</td></tr>
+        <tr><td>IRS audit risk</td><td>Slightly higher</td><td>Slightly lower</td></tr>
+        <tr><td>Business bank account required</td><td>No</td><td>Strongly recommended</td></tr>
+        <tr><td>Credibility with clients</td><td>Standard</td><td>Higher</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="which-to-choose">6. Which should you choose?</h2>
+
+    <div class="verdict-grid">
+      <div class="verdict-card sole">
+        <div class="verdict-title">Choose sole proprietorship if:</div>
+        <ul>
+          <li>You're just starting out and testing an idea</li>
+          <li>Net profit is under $40,000/year</li>
+          <li>You want zero setup cost and paperwork</li>
+          <li>Your business has minimal liability risk</li>
+          <li>You prefer maximum simplicity</li>
+        </ul>
+      </div>
+      <div class="verdict-card llc">
+        <div class="verdict-title">Choose LLC if:</div>
+        <ul>
+          <li>You have real liability exposure (clients, contracts, physical products)</li>
+          <li>Net profit is above $60,000 and growing</li>
+          <li>You want to elect S corp status to save on SE tax</li>
+          <li>You want more professional credibility</li>
+          <li>You plan to take on partners or investors later</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <h3>The honest bottom line</h3>
+      <p style="font-size:15px;color:#2a2a2a;margin-bottom:0.75rem;">If you're earning under $60,000 in net profit, forming an LLC saves you nothing on taxes — the default treatment is identical to a sole proprietorship. The LLC's value at that stage is purely liability protection.</p>
+      <p style="font-size:15px;color:#2a2a2a;margin-bottom:0;">Once you're consistently earning $80,000+ in net profit, the S corp election through an LLC can save $5,000–$15,000 per year in self-employment taxes. At that point, the setup and payroll administration costs are worth it.</p>
+    </div>
+
+    <h2 id="costs">7. LLC formation costs by state (2025)</h2>
+    <p>If you decide to form an LLC, here are the filing fees for the most common states for small business owners:</p>
+
+    <table class="tax-table">
+      <thead>
+        <tr><th>State</th><th>Formation fee</th><th>Annual fee</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>California</td><td>$70</td><td>$800 minimum franchise tax</td></tr>
+        <tr><td>Texas</td><td>$300</td><td>No annual fee (report only)</td></tr>
+        <tr><td>Florida</td><td>$125</td><td>$138.75/year</td></tr>
+        <tr><td>New York</td><td>$200</td><td>$25/year + publication requirement</td></tr>
+        <tr><td>Wyoming</td><td>$100</td><td>$60/year (popular for low cost)</td></tr>
+        <tr><td>Delaware</td><td>$90</td><td>$300/year (popular for investors)</td></tr>
+      </tbody>
+    </table>
+    <p class="data-source">Source: Individual state Secretary of State websites, 2025</p>
+
+    <p>Use our <a href="/cleartaxguide/#tools">free self-employment tax calculator</a> to estimate how much you'd save with an S corp election based on your current income level.</p>
+
+  </div>
+
+  <div class="next-article">
+    <div class="next-label">Read next</div>
+    <div class="next-title"><a href="freelancer-taxes.html">How to file taxes as a freelancer in the US (2025 Guide) →</a></div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Clear<span>Tax</span>Guide</div>
+      <div class="footer-desc">Free tax guides for US freelancers and small business owners.</div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 ClearTaxGuide · For informational purposes only · Not professional tax advice · Figures based on IRS publications current as of May 2025</div>
+</footer>
+
+</body>
+</html>
