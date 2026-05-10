@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Tax Guides — ClearTaxGuide</title>
+  <meta name="description" content="Free US tax guides for freelancers and small business owners. Schedule C, quarterly taxes, deductions, LLC vs sole proprietorship, and more — all updated for 2025."/>
+  <link rel="canonical" href="https://leozx-ops.github.io/cleartaxguide/guides.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{--black:#0A0A0A;--gray2:#4A4A4A;--gray3:#9A9A9A;--bg:#F5F5F3;--bg2:#EBEBEA;--white:#FFFFFF;--green:#1DB954;--green-d:#159640;--green-l:#E8F8EE;--border:#E0E0DE;--border2:#CACAC8}
+    body{font-family:'Inter',sans-serif;color:var(--black);background:var(--bg);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:1.25rem 4rem;background:var(--bg);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50}
+    .logo{font-size:20px;font-weight:800;letter-spacing:-.5px}.logo span{color:var(--green)}
+    .nav-links{display:flex;gap:2.5rem}.nav-links a{font-size:15px;color:var(--gray2);font-weight:500;transition:color .15s}.nav-links a:hover{color:var(--black)}
+    .nav-cta{background:var(--black);color:#fff;border:none;padding:11px 24px;border-radius:100px;font-size:15px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif}
+
+    .page-header{padding:4rem 4rem 2rem;max-width:1040px;margin:0 auto}
+    .page-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--green);margin-bottom:1rem}
+    .page-title{font-size:46px;font-weight:800;letter-spacing:-1.5px;margin-bottom:0.75rem}
+    .page-sub{font-size:17px;color:var(--gray2);max-width:500px;line-height:1.7}
+
+    .filters{padding:0 4rem 2rem;max-width:1040px;margin:0 auto;display:flex;gap:8px;flex-wrap:wrap}
+    .filter-btn{background:var(--white);border:1px solid var(--border2);color:var(--gray2);padding:7px 16px;border-radius:100px;font-size:13px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:all .15s}
+    .filter-btn:hover{border-color:var(--black);color:var(--black)}
+    .filter-btn.active{background:var(--black);color:#fff;border-color:var(--black)}
+
+    .guides-wrap{max-width:1040px;margin:0 auto;padding:0 4rem 5rem}
+    .guides-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .guide-card{background:var(--white);border:1px solid var(--border);border-radius:18px;padding:1.75rem;display:block;transition:border-color .2s,box-shadow .2s,transform .2s;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+    .guide-card:hover{border-color:var(--black);box-shadow:0 8px 24px rgba(0,0,0,.08);transform:translateY(-3px)}
+    .guide-tag{font-size:12px;color:var(--green-d);background:var(--green-l);padding:4px 12px;border-radius:100px;display:inline-block;margin-bottom:14px;font-weight:600}
+    .guide-title{font-size:16px;font-weight:700;line-height:1.4;margin-bottom:12px;color:var(--black)}
+    .guide-desc{font-size:13px;color:var(--gray2);line-height:1.6;margin-bottom:14px}
+    .guide-footer{display:flex;align-items:center;justify-content:space-between}
+    .guide-meta{font-size:12px;color:var(--gray3);font-weight:500}
+    .guide-arrow{width:28px;height:28px;border-radius:50%;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--gray2);transition:background .15s}
+    .guide-card:hover .guide-arrow{background:var(--black);color:#fff;border-color:var(--black)}
+
+    footer{background:var(--white);border-top:1px solid var(--border);padding:3rem 4rem}
+    .fi{max-width:1040px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:2rem}
+    .fl{font-size:20px;font-weight:800}.fl span{color:var(--green)}
+    .fd{font-size:14px;color:var(--gray2);margin-top:8px;max-width:260px;line-height:1.6}
+    .flinks{display:flex;gap:2rem;flex-wrap:wrap;padding-top:4px}.flinks a{font-size:14px;color:var(--gray2);font-weight:500}
+    .fb{max-width:1040px;margin:2rem auto 0;padding-top:1.5rem;border-top:1px solid var(--border);font-size:13px;color:var(--gray3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+    @media(max-width:768px){
+      nav{padding:1rem 1.5rem}.nav-links{display:none}
+      .page-header,.filters,.guides-wrap{padding-left:1.5rem;padding-right:1.5rem}
+      .page-title{font-size:32px}
+      .guides-grid{grid-template-columns:1fr}
+      footer{padding:2rem 1.5rem}
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/cleartaxguide/"><div class="logo">Clear<span>Tax</span>Guide</div></a>
+  <div class="nav-links">
+    <a href="/cleartaxguide/#tools">Tools</a>
+    <a href="/cleartaxguide/guides.html" style="color:var(--black)">Guides</a>
+    <a href="/cleartaxguide/#why">About</a>
+  </div>
+  <button class="nav-cta" onclick="window.location.href='/cleartaxguide/#tools'">Try Calculator</button>
+</nav>
+
+<div class="page-header">
+  <div class="page-label">All Guides</div>
+  <div class="page-title">Plain English tax guides</div>
+  <p class="page-sub">Everything you need to know about US taxes as a freelancer or small business owner — updated with 2025 IRS figures.</p>
+</div>
+
+<div class="filters">
+  <button class="filter-btn active">All</button>
+  <button class="filter-btn">Freelancer</button>
+  <button class="filter-btn">Small Business</button>
+  <button class="filter-btn">Deductions</button>
+  <button class="filter-btn">Quarterly Taxes</button>
+  <button class="filter-btn">International</button>
+  <button class="filter-btn">Tax Software</button>
+</div>
+
+<div class="guides-wrap">
+  <div class="guides-grid">
+
+    <a href="freelancer-taxes.html" class="guide-card">
+      <div class="guide-tag">Freelancer</div>
+      <div class="guide-title">How to file taxes as a freelancer in the US (2025 Guide)</div>
+      <div class="guide-desc">Schedule C, self-employment tax, quarterly payments, and top deductions — all in one complete guide.</div>
+      <div class="guide-footer"><div class="guide-meta">8 min · May 2026</div><div class="guide-arrow">→</div></div>
+    </a>
+
+    <a href="llc-vs-sole-proprietorship.html" class="guide-card">
+      <div class="guide-tag">Small Business</div>
+      <div class="guide-title">LLC vs Sole Proprietorship: what nobody tells you about taxes in 2025</div>
+      <div class="guide-desc">The truth about whether an LLC actually saves taxes — and when an S corp election makes sense.</div>
+      <div class="guide-footer"><div class="guide-meta">8 min · May 2026</div><div class="guide-arrow">→</div></div>
+    </a>
+
+    <a href="1099-nec-guide.html" class="guide-card">
+      <div class="guide-tag">Freelancer</div>
+      <div class="guide-title">What is a 1099-NEC and what do I do with it? (2025 Guide)</div>
+      <div class="guide-desc">The freelancer's equivalent of a W-2 — what it means, what to do when you receive one, and the 2025 threshold changes.</div>
+      <div class="guide-footer"><div class="guide-meta">6 min · May 2026</div><div class="guide-arrow">→</div></div>
+    </a>
+
+    <a href="quarterly-taxes.html" class="guide-card">
+      <div class="guide-tag">Quarterly Taxes</div>
+      <div class="guide-title">How to pay quarterly estimated taxes in the US (2025 Guide)</div>
+      <div class="guide-desc">Deadlines, how much to pay, and how to pay online — step by step with 2025 due dates.</div>
+      <div class="guide-footer"><div class="guide-meta">7 min · May 2026</div><div class="guide-arrow">→</div></div>
+    </a>
+
+    <a href="home-office-deduction.html" class="guide-card">
+      <div class="guide-tag">Deductions</div>
+      <div class="guide-title">Home office deduction 2025: how to claim it correctly</div>
+      <div class="guide-desc">The two methods, who qualifies, common mistakes, and why W-2 employees can't claim it.</div>
+      <div class="guide-footer"><div class="guide-meta">7 min · May 2026</div><div class="guide-arrow">→</div></div>
+    </a>
+
+    <a href="freelancer-deductions.html" class="guide-card">
+      <div class="guide-tag">Deductions</div>
+      <div class="guide-title">What business expenses can freelancers deduct in the US? (2025)</div>
+      <div class="guide-desc">Complete list of every deduction available to self-employed professionals — from equipment to retirement contributions.</div>
+      <div class="guide-footer"><div class="guide-meta">9 min · May 2026</div><div class="guide-arrow">→</div></div>
+    </a>
+
+    <a href="best-tax-software-self-employed.html" class="guide-card">
+      <div class="guide-tag">Tax Software</div>
+      <div class="guide-title">Best tax software for self-employed filers in 2025</div>
+      <div class="guide-desc">Honest comparison of TurboTax, FreeTaxUSA, H&R Block, and TaxAct — which actually saves you money.</div>
+      <div class="guide-footer"><div class="guide-meta">8 min · May 2026</div><div class="guide-arrow">→</div></div>
+    </a>
+
+    <a href="us-vs-singapore-tax.html" class="guide-card">
+      <div class="guide-tag">International</div>
+      <div class="guide-title">US vs Singapore tax system: a complete comparison (2025)</div>
+      <div class="guide-desc">Income tax rates, corporate tax, GST vs sales tax, capital gains, and what changes when you move between the two countries.</div>
+      <div class="guide-footer"><div class="guide-meta">10 min · May 2026</div><div class="guide-arrow">→</div></div>
+    </a>
+
+  </div>
+</div>
+
+<footer>
+  <div class="fi">
+    <div><div class="fl">Clear<span>Tax</span>Guide</div><div class="fd">Free tax guides and tools for US freelancers and small business owners. Not a licensed tax advisor.</div></div>
+    <div class="flinks"><a href="/cleartaxguide/#tools">Tools</a><a href="/cleartaxguide/guides.html">Guides</a><a href="/cleartaxguide/#why">About</a></div>
+  </div>
+  <div class="fb">
+    <span>© 2026 ClearTaxGuide · For informational purposes only · Not professional tax advice</span>
+    <span>Figures based on IRS publications current as of May 2026</span>
+  </div>
+</footer>
+</body>
+</html>
