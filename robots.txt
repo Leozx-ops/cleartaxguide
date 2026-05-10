@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leozx-ops.github.io/cleartaxguide/sitemap.xml
