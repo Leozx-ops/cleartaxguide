@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>ClearTaxGuide — Free US Tax Help for Freelancers & Self-Employed (2025)</title>
+  <meta name="description" content="Free US tax guides and calculators for freelancers, self-employed professionals, and small business owners in 2025. Understand Schedule C, quarterly taxes, and deductions — in plain English." />
+  <meta name="keywords" content="freelancer taxes 2025, self-employed tax guide, US tax calculator, schedule C, quarterly estimated taxes, 1099-NEC, home office deduction, small business taxes USA" />
+  <link rel="canonical" href="https://leozx-ops.github.io/cleartaxguide/" />
+
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ClearTaxGuide — Free US Tax Help for Freelancers & Self-Employed (2025)" />
+  <meta property="og:description" content="Free tax guides and calculators for US freelancers and small business owners. Schedule C, quarterly taxes, deductions — all explained in plain English." />
+  <meta property="og:url" content="https://leozx-ops.github.io/cleartaxguide/" />
+  <meta property="og:site_name" content="ClearTaxGuide" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="ClearTaxGuide — Free US Tax Help for Freelancers (2025)" />
+  <meta name="twitter:description" content="Free tax guides and calculators for US freelancers and small business owners. Plain English, no jargon." />
+
+  <!-- Website Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ClearTaxGuide",
+    "url": "https://leozx-ops.github.io/cleartaxguide/",
+    "description": "Free US tax guides and calculators for freelancers, self-employed professionals, and small business owners.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://leozx-ops.github.io/cleartaxguide/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Tax Guides",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"How to File Taxes as a Freelancer in the US (2025)","url":"https://leozx-ops.github.io/cleartaxguide/freelancer-taxes.html"},
+      {"@type":"ListItem","position":2,"name":"LLC vs Sole Proprietorship: Taxes in 2025","url":"https://leozx-ops.github.io/cleartaxguide/llc-vs-sole-proprietorship.html"},
+      {"@type":"ListItem","position":3,"name":"What is a 1099-NEC? (2025 Guide)","url":"https://leozx-ops.github.io/cleartaxguide/1099-nec-guide.html"},
+      {"@type":"ListItem","position":4,"name":"How to Pay Quarterly Estimated Taxes (2025)","url":"https://leozx-ops.github.io/cleartaxguide/quarterly-taxes.html"},
+      {"@type":"ListItem","position":5,"name":"Home Office Deduction 2025","url":"https://leozx-ops.github.io/cleartaxguide/home-office-deduction.html"},
+      {"@type":"ListItem","position":6,"name":"Best Tax Software for Self-Employed 2025","url":"https://leozx-ops.github.io/cleartaxguide/best-tax-software-self-employed.html"}
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema for homepage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much do freelancers pay in taxes in the US in 2025?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Freelancers pay self-employment tax of 15.3% on net profit plus federal income tax at their bracket rate (10%–37%). A practical rule of thumb is to set aside 25–30% of each client payment. The 2025 standard deduction for single filers is $15,750."}
+      },
+      {
+        "@type": "Question",
+        "name": "What is the self-employment tax rate in 2025?",
+        "acceptedAnswer": {"@type": "Answer", "text": "The self-employment tax rate in 2025 is 15.3% — made up of 12.4% Social Security and 2.9% Medicare. You can deduct half of this tax (7.65%) from your gross income before calculating federal income tax."}
+      },
+      {
+        "@type": "Question",
+        "name": "Do freelancers need to pay quarterly taxes?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes. If you expect to owe $1,000 or more in federal taxes for the year, you must make quarterly estimated payments. The 2025 due dates are April 15, June 16, September 15, and January 15, 2026."}
+      },
+      {
+        "@type": "Question",
+        "name": "What is Schedule C?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Schedule C is the IRS form where freelancers and self-employed individuals report business income and expenses. Net profit on Schedule C is what gets taxed — not total gross income."}
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --black:   #0A0A0A;
+      --gray1:   #1A1A1A;
+      --gray2:   #4A4A4A;
+      --gray3:   #9A9A9A;
+      --bg:      #F5F5F3;
+      --bg2:     #EBEBEA;
+      --white:   #FFFFFF;
+      --green:   #1DB954;
+      --green-d: #159640;
+      --green-l: #E8F8EE;
+      --border:  #E0E0DE;
+      --border2: #CACAC8;
+    }
+
+    body { font-family: 'Inter', sans-serif; color: var(--black); background: var(--bg); line-height: 1.6; overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ── NAV ── */
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 4rem; background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 50;
+    }
+    .logo { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; color: var(--black); }
+    .logo span { color: var(--green); }
+    .nav-links { display: flex; gap: 2.5rem; }
+    .nav-links a { font-size: 15px; color: var(--gray2); font-weight: 500; transition: color 0.15s; }
+    .nav-links a:hover { color: var(--black); }
+    .nav-cta {
+      background: var(--black); color: var(--white); border: none;
+      padding: 11px 24px; border-radius: 100px; font-size: 15px;
+      font-weight: 600; cursor: pointer; font-family: 'Inter', sans-serif;
+      transition: opacity 0.15s;
+    }
+    .nav-cta:hover { opacity: 0.80; }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 7rem 4rem 5rem; text-align: center;
+      background: var(--bg);
+      background-image: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(29,185,84,0.08), transparent);
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--white); border: 1px solid var(--border2);
+      color: var(--gray2); font-size: 13px; font-weight: 500;
+      padding: 6px 16px; border-radius: 100px; margin-bottom: 2.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .hero-badge-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); }
+    .hero h1 {
+      font-size: 68px; font-weight: 800; line-height: 1.05;
+      letter-spacing: -2.5px; margin-bottom: 1.5rem;
+      max-width: 780px; margin-inline: auto; color: var(--black);
+    }
+    .hero h1 em { color: var(--green); font-style: normal; }
+    .hero p {
+      font-size: 19px; color: var(--gray2); line-height: 1.7;
+      max-width: 520px; margin: 0 auto 3rem; font-weight: 400;
+    }
+    .hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-black {
+      background: var(--black); color: var(--white); border: none;
+      padding: 14px 28px; border-radius: 100px; font-size: 16px;
+      font-weight: 600; cursor: pointer; font-family: 'Inter', sans-serif;
+      transition: opacity 0.15s;
+    }
+    .btn-black:hover { opacity: 0.80; }
+    .btn-outline {
+      background: var(--white); color: var(--black);
+      border: 1px solid var(--border2); padding: 14px 28px;
+      border-radius: 100px; font-size: 16px; font-weight: 600;
+      cursor: pointer; font-family: 'Inter', sans-serif;
+      transition: border-color 0.15s; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .btn-outline:hover { border-color: var(--gray2); }
+
+    /* ── STATS STRIP ── */
+    .stats-strip {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    }
+    .stat-item { padding: 1.75rem 2rem; border-right: 1px solid var(--border); text-align: center; }
+    .stat-item:last-child { border-right: none; }
+    .stat-num { font-size: 32px; font-weight: 800; color: var(--black); letter-spacing: -1px; }
+    .stat-unit { font-size: 20px; color: var(--green); font-weight: 700; }
+    .stat-label { font-size: 13px; color: var(--gray3); margin-top: 4px; font-weight: 500; }
+
+    /* ── SECTIONS ── */
+    .section { max-width: 1040px; margin: 0 auto; padding: 5rem 4rem; }
+    .section-label {
+      font-size: 12px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 2px; color: var(--green); margin-bottom: 1rem;
+    }
+    .section h2 {
+      font-size: 42px; font-weight: 800; letter-spacing: -1.2px;
+      margin-bottom: 0.75rem; color: var(--black); line-height: 1.1;
+    }
+    .section-sub { font-size: 17px; color: var(--gray2); margin-bottom: 3rem; max-width: 500px; line-height: 1.7; }
+
+    /* ── CALCULATOR ── */
+    .calc-wrap {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 20px; padding: 2.5rem;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    .calc-title {
+      font-size: 16px; font-weight: 700; margin-bottom: 2rem;
+      color: var(--black); display: flex; align-items: center; gap: 10px;
+    }
+    .calc-tag {
+      background: var(--green-l); color: var(--green-d);
+      font-size: 12px; font-weight: 600; padding: 3px 10px;
+      border-radius: 100px; letter-spacing: 0.3px;
+    }
+    .calc-row { margin-bottom: 1.5rem; }
+    .calc-label { font-size: 14px; color: var(--gray2); margin-bottom: 8px; display: flex; justify-content: space-between; font-weight: 500; }
+    .calc-label span { font-weight: 700; color: var(--black); font-size: 15px; }
+    input[type=range] { width: 100%; accent-color: var(--black); cursor: pointer; height: 3px; }
+    select {
+      width: 100%; padding: 11px 14px; border-radius: 10px;
+      border: 1px solid var(--border2); background: var(--bg);
+      color: var(--black); font-size: 15px; font-family: 'Inter', sans-serif;
+      cursor: pointer; font-weight: 500;
+    }
+    .calc-result {
+      margin-top: 2rem; background: var(--black); border-radius: 16px;
+      padding: 1.75rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
+    }
+    .result-label { font-size: 11px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; font-weight: 600; }
+    .result-value { font-size: 26px; font-weight: 800; letter-spacing: -0.5px; color: var(--white); }
+    .result-value.green { color: var(--green); }
+    .result-value.amber { color: #F59E0B; }
+
+    /* ── TOOL CARDS ── */
+    .tools-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 16px; }
+    .tool-card {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.5rem; cursor: pointer;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .tool-card:hover { border-color: var(--black); box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .tool-icon { font-size: 24px; margin-bottom: 12px; }
+    .tool-title { font-size: 15px; font-weight: 700; margin-bottom: 4px; color: var(--black); }
+    .tool-desc { font-size: 13px; color: var(--gray2); line-height: 1.5; }
+
+    /* ── DIVIDER ── */
+    .divider { border: none; border-top: 1px solid var(--border); }
+
+    /* ── ARTICLES ── */
+    .articles-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+    .article-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 18px; padding: 1.75rem; display: block;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+    .article-card:hover { border-color: var(--black); box-shadow: 0 8px 24px rgba(0,0,0,0.08); transform: translateY(-3px); }
+    .article-tag {
+      font-size: 12px; color: var(--green-d); background: var(--green-l);
+      padding: 4px 12px; border-radius: 100px;
+      display: inline-block; margin-bottom: 14px; font-weight: 600;
+    }
+    .article-title { font-size: 16px; font-weight: 700; line-height: 1.4; margin-bottom: 12px; color: var(--black); }
+    .article-footer { display: flex; align-items: center; justify-content: space-between; }
+    .article-meta { font-size: 12px; color: var(--gray3); font-weight: 500; }
+    .article-arrow {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--bg); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; color: var(--gray2); transition: background 0.15s;
+    }
+    .article-card:hover .article-arrow { background: var(--black); color: var(--white); border-color: var(--black); }
+
+    /* ── WHY ── */
+    .why-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+    .why-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 18px; padding: 2rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+    .why-num { font-size: 42px; font-weight: 800; color: var(--green); letter-spacing: -1px; line-height: 1; margin-bottom: 1rem; }
+    .why-title { font-size: 17px; font-weight: 700; margin-bottom: 8px; color: var(--black); }
+    .why-desc { font-size: 14px; color: var(--gray2); line-height: 1.7; }
+
+    /* ── CTA BAND ── */
+    .cta-band {
+      margin: 0 4rem 5rem; border-radius: 24px; overflow: hidden;
+      background: var(--black); padding: 5rem 4rem; text-align: center;
+      position: relative;
+    }
+    .cta-band::after {
+      content: ''; position: absolute; bottom: -80px; right: -80px;
+      width: 300px; height: 300px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(29,185,84,0.15), transparent 70%);
+    }
+    .cta-band h2 { font-size: 46px; font-weight: 800; letter-spacing: -1.5px; margin-bottom: 1rem; color: var(--white); position: relative; }
+    .cta-band p { font-size: 17px; color: rgba(255,255,255,0.6); margin-bottom: 2.5rem; position: relative; }
+    .btn-green {
+      background: var(--green); color: var(--white); border: none;
+      padding: 14px 32px; border-radius: 100px; font-size: 16px;
+      font-weight: 700; cursor: pointer; font-family: 'Inter', sans-serif;
+      transition: opacity 0.15s; position: relative;
+    }
+    .btn-green:hover { opacity: 0.88; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--white); border-top: 1px solid var(--border); padding: 3rem 4rem; }
+    .footer-inner { max-width: 1040px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 2rem; }
+    .footer-logo { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; }
+    .footer-logo span { color: var(--green); }
+    .footer-desc { font-size: 14px; color: var(--gray2); margin-top: 8px; max-width: 260px; line-height: 1.6; }
+    .footer-links { display: flex; gap: 2rem; flex-wrap: wrap; padding-top: 4px; }
+    .footer-links a { font-size: 14px; color: var(--gray2); font-weight: 500; transition: color 0.15s; }
+    .footer-links a:hover { color: var(--black); }
+    .footer-bottom { max-width: 1040px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 13px; color: var(--gray3); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; }
+      .hero { padding: 5rem 1.5rem 3rem; }
+      .hero h1 { font-size: 40px; letter-spacing: -1.5px; }
+      .hero p { font-size: 17px; }
+      .stats-strip { grid-template-columns: repeat(2,1fr); }
+      .section { padding: 3rem 1.5rem; }
+      .section h2 { font-size: 30px; }
+      .tools-grid, .articles-grid, .why-grid { grid-template-columns: 1fr; }
+      .calc-result { grid-template-columns: 1fr; }
+      .cta-band { margin: 0 1.5rem 3rem; padding: 3rem 1.5rem; }
+      .cta-band h2 { font-size: 30px; }
+      footer { padding: 2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Clear<span>Tax</span>Guide</div>
+  <div class="nav-links">
+    <a href="#tools">Tools</a>
+    <a href="#guides">Guides</a>
+    <a href="#why">About</a>
+  </div>
+  <button class="nav-cta" onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'})">Try Calculator</button>
+</nav>
+
+<div class="hero">
+  <div class="hero-badge"><div class="hero-badge-dot"></div> Free for freelancers &amp; small businesses</div>
+  <h1>US taxes, explained<br/><em>without</em> the confusion</h1>
+  <p>Practical guides and free tools for self-employed professionals navigating the US tax system — including those with international backgrounds.</p>
+  <div class="hero-btns">
+    <button class="btn-black" onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'})">Try the Tax Calculator</button>
+    <button class="btn-outline" onclick="document.getElementById('guides').scrollIntoView({behavior:'smooth'})">Browse Guides →</button>
+  </div>
+</div>
+
+<div class="stats-strip">
+  <div class="stat-item">
+    <div class="stat-num">33<span class="stat-unit">M+</span></div>
+    <div class="stat-label">Small businesses in the US</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num" style="color:var(--green)">$0</div>
+    <div class="stat-label">Cost to use all tools</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">2025</div>
+    <div class="stat-label">IRS figures, always current</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">6<span class="stat-unit">+</span></div>
+    <div class="stat-label">In-depth tax guides</div>
+  </div>
+</div>
+
+<hr class="divider"/>
+
+<!-- TOOLS -->
+<div class="section" id="tools">
+  <div class="section-label">Free Tools</div>
+  <h2>Calculate before you file</h2>
+  <p class="section-sub">Estimate your tax liability in minutes — no sign-up, no email required.</p>
+
+  <div class="calc-wrap">
+    <div class="calc-title">
+      Self-employed tax estimator
+      <span class="calc-tag">Tax Year 2025</span>
+    </div>
+
+    <div class="calc-row">
+      <div class="calc-label">Annual gross income <span id="income-display">$60,000</span></div>
+      <input type="range" min="10000" max="300000" step="1000" value="60000" id="income-slider">
+    </div>
+    <div class="calc-row">
+      <div class="calc-label">Business expenses <span id="expense-display">$12,000</span></div>
+      <input type="range" min="0" max="100000" step="500" value="12000" id="expense-slider">
+    </div>
+    <div class="calc-row">
+      <div class="calc-label">Filing status</div>
+      <select id="filing-status">
+        <option value="single">Single</option>
+        <option value="married">Married filing jointly</option>
+        <option value="hoh">Head of household</option>
+      </select>
+    </div>
+
+    <div class="calc-result">
+      <div>
+        <div class="result-label">Net income</div>
+        <div class="result-value green" id="net-income">$48,000</div>
+      </div>
+      <div>
+        <div class="result-label">Self-employment tax</div>
+        <div class="result-value amber" id="se-tax">$6,779</div>
+      </div>
+      <div>
+        <div class="result-label">Federal income tax (est.)</div>
+        <div class="result-value amber" id="fed-tax">$4,921</div>
+      </div>
+      <div>
+        <div class="result-label">Effective tax rate</div>
+        <div class="result-value" id="eff-rate">24.4%</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tools-grid">
+    <div class="tool-card">
+      <div class="tool-icon">🏢</div>
+      <div class="tool-title">LLC vs Sole Prop</div>
+      <div class="tool-desc">Compare tax treatment for your business structure</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">🌏</div>
+      <div class="tool-title">US vs SG Tax Compare</div>
+      <div class="tool-desc">See how Singapore and US tax systems differ</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">📅</div>
+      <div class="tool-title">Quarterly Due Dates</div>
+      <div class="tool-desc">Never miss an estimated tax payment deadline</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider"/>
+
+<!-- GUIDES -->
+<div class="section" id="guides" style="background: var(--bg2); max-width:100%; padding: 5rem 0;">
+  <div style="max-width:1040px; margin:0 auto; padding: 0 4rem;">
+    <div class="section-label">Guides</div>
+    <h2>Plain English tax guides</h2>
+    <p class="section-sub">Written for real people — not accountants. All figures updated for 2025.</p>
+
+    <div class="articles-grid">
+      <a href="freelancer-taxes.html" class="article-card">
+        <div class="article-tag">Freelancer</div>
+        <div class="article-title">How to file taxes as a freelancer in the US (2025 Guide)</div>
+        <div class="article-footer">
+          <div class="article-meta">8 min · May 2025</div>
+          <div class="article-arrow">→</div>
+        </div>
+      </a>
+      <a href="llc-vs-sole-proprietorship.html" class="article-card">
+        <div class="article-tag">Small Business</div>
+        <div class="article-title">LLC vs Sole Proprietorship: what nobody tells you about taxes in 2025</div>
+        <div class="article-footer">
+          <div class="article-meta">8 min · May 2025</div>
+          <div class="article-arrow">→</div>
+        </div>
+      </a>
+      <a href="1099-nec-guide.html" class="article-card">
+        <div class="article-tag">Freelancer</div>
+        <div class="article-title">What is a 1099-NEC and what do I do with it? (2025 Guide)</div>
+        <div class="article-footer">
+          <div class="article-meta">6 min · May 2025</div>
+          <div class="article-arrow">→</div>
+        </div>
+      </a>
+      <a href="quarterly-taxes.html" class="article-card">
+        <div class="article-tag">Quarterly Taxes</div>
+        <div class="article-title">How to pay quarterly estimated taxes in the US (2025 Guide)</div>
+        <div class="article-footer">
+          <div class="article-meta">7 min · May 2025</div>
+          <div class="article-arrow">→</div>
+        </div>
+      </a>
+      <a href="home-office-deduction.html" class="article-card">
+        <div class="article-tag">Deductions</div>
+        <div class="article-title">Home office deduction 2025: how to claim it correctly</div>
+        <div class="article-footer">
+          <div class="article-meta">7 min · May 2025</div>
+          <div class="article-arrow">→</div>
+        </div>
+      </a>
+      <a href="best-tax-software-self-employed.html" class="article-card">
+        <div class="article-tag">Tax Software</div>
+        <div class="article-title">Best tax software for self-employed filers in 2025</div>
+        <div class="article-footer">
+          <div class="article-meta">8 min · May 2025</div>
+          <div class="article-arrow">→</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<hr class="divider"/>
+
+<!-- WHY -->
+<div class="section" id="why">
+  <div class="section-label">Why ClearTaxGuide</div>
+  <h2>Built for people,<br/>not accountants</h2>
+  <p class="section-sub">No paywalls, no jargon, no upsells. Just the information you actually need.</p>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-num">01</div>
+      <div class="why-title">Always up to date</div>
+      <div class="why-desc">Every guide uses the current year's IRS figures — including the latest 2025 standard deductions, tax brackets, and rule changes.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-num">02</div>
+      <div class="why-title">International perspective</div>
+      <div class="why-desc">Written with Singapore and Asia-Pacific backgrounds in mind — for professionals navigating both US and international tax systems.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-num">03</div>
+      <div class="why-title">Completely free</div>
+      <div class="why-desc">All guides, tools, and calculators are free to use. No account needed, no email required, no credit card ever.</div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-band">
+  <h2>Ready to understand your taxes?</h2>
+  <p>Start with our free self-employment tax calculator — no sign-up required.</p>
+  <button class="btn-green" onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'})">Try the Calculator →</button>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Clear<span>Tax</span>Guide</div>
+      <div class="footer-desc">Free tax guides and tools for US freelancers and small business owners. Not a licensed tax advisor.</div>
+    </div>
+    <div class="footer-links">
+      <a href="#tools">Tools</a>
+      <a href="#guides">Guides</a>
+      <a href="#why">About</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 ClearTaxGuide · For informational purposes only · Not professional tax advice</span>
+    <span>Figures based on IRS publications current as of May 2025</span>
+  </div>
+</footer>
+
+<script>
+function fmt(n) { return '$' + Math.round(n).toLocaleString(); }
+function calc() {
+  const income = parseInt(document.getElementById('income-slider').value);
+  const expenses = parseInt(document.getElementById('expense-slider').value);
+  const status = document.getElementById('filing-status').value;
+  document.getElementById('income-display').textContent = fmt(income);
+  document.getElementById('expense-display').textContent = fmt(expenses);
+  const net = Math.max(0, income - expenses);
+  document.getElementById('net-income').textContent = fmt(net);
+  const seTax = net * 0.9235 * 0.153;
+  document.getElementById('se-tax').textContent = fmt(seTax);
+  const deductions = { single: 15750, married: 31500, hoh: 23625 };
+  const seDeduction = seTax / 2;
+  const taxable = Math.max(0, net - seDeduction - deductions[status]);
+  let fedTax = 0;
+  const brackets = status === 'married'
+    ? [[23850,0.10],[96950,0.12],[206700,0.22],[394600,0.24],[501050,0.32],[751600,0.35],[Infinity,0.37]]
+    : [[11925,0.10],[48475,0.12],[103350,0.22],[197300,0.24],[250525,0.32],[626350,0.35],[Infinity,0.37]];
+  let prev = 0;
+  for (const [limit, rate] of brackets) {
+    if (taxable <= prev) break;
+    fedTax += (Math.min(taxable, limit) - prev) * rate;
+    prev = limit;
+  }
+  document.getElementById('fed-tax').textContent = fmt(fedTax);
+  const total = seTax + fedTax;
+  const effRate = net > 0 ? ((total / net) * 100).toFixed(1) + '%' : '0%';
+  document.getElementById('eff-rate').textContent = effRate;
+}
+document.getElementById('income-slider').addEventListener('input', calc);
+document.getElementById('expense-slider').addEventListener('input', calc);
+document.getElementById('filing-status').addEventListener('change', calc);
+calc();
+</script>
+</body>
+</html>
