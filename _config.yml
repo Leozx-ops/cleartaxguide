@@ -1,8 +1,0 @@
-include:
-  - sitemap.xml
-  - robots.txt
-
-plugins: []
-
-exclude:
-  - README.md
