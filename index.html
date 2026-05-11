@@ -231,9 +231,9 @@
     .tool-card {
       background: var(--bg); border: 1px solid var(--border);
       border-radius: 16px; padding: 1.5rem; cursor: pointer;
-      transition: border-color 0.2s, box-shadow 0.2s;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
     }
-    .tool-card:hover { border-color: var(--black); box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .tool-card:hover { border-color: var(--black); box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
     .tool-icon { font-size: 24px; margin-bottom: 12px; }
     .tool-title { font-size: 15px; font-weight: 700; margin-bottom: 4px; color: var(--black); }
     .tool-desc { font-size: 13px; color: var(--gray2); line-height: 1.5; }
@@ -419,21 +419,27 @@
   </div>
 
   <div class="tools-grid">
+    <a href="llc-vs-sole-proprietorship.html" style="text-decoration:none;color:inherit;">
     <div class="tool-card">
       <div class="tool-icon">🏢</div>
       <div class="tool-title">LLC vs Sole Prop</div>
       <div class="tool-desc">Compare tax treatment for your business structure</div>
     </div>
+    </a>
+    <a href="us-vs-singapore-tax.html" style="text-decoration:none;color:inherit;">
     <div class="tool-card">
       <div class="tool-icon">🌏</div>
       <div class="tool-title">US vs SG Tax Compare</div>
       <div class="tool-desc">See how Singapore and US tax systems differ</div>
     </div>
+    </a>
+    <a href="quarterly-taxes.html" style="text-decoration:none;color:inherit;">
     <div class="tool-card">
       <div class="tool-icon">📅</div>
       <div class="tool-title">Quarterly Due Dates</div>
       <div class="tool-desc">Never miss an estimated tax payment deadline</div>
     </div>
+    </a>
   </div>
 </div>
 
